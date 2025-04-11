@@ -12,6 +12,8 @@ Clona el repositorio
 git clone git@github.com:JoseFlores9/chatbot.git
 cd chatbot
 ```
+Crear archivo con nombre .env en la raíz del proyecto y dentro agregar el contenido que se indica en el archivo .pdf
+
 instalar las dependencias
 
 ```bash

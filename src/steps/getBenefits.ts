@@ -1,8 +1,12 @@
-import axios from "axios";
+import axios from "axios"
+import dotenv from "dotenv"
+
+dotenv.config()
+const baseURL = process.env.BENEFITS_API_URL
 
 export async function getBenefits(params:any) {
     try {
-        const response = await axios.get(`http://localhost:3000/benefits/collaborator/${params.identifier}?benefitType=${params.types.join(',')}`)
+        const response = await axios.get(`${baseURL}/benefits/collaborator/${params.identifier}?benefitType=${params.types.join(',')}`)
         return response.data
     }
     catch(error) {
